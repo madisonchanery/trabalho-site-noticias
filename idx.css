@@ -1,0 +1,127 @@
+/* Importando a fonte Merriweather do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #a9a9a9; /* Fundo cinza mais escuro */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.headline {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.headline h1 {
+    font-family: 'Merriweather', serif; /* Título com fonte Merriweather */
+    font-size: 3em;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.headline h1::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: #ffc0cb; /* Linha rosa abaixo do título */
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+}
+
+.headline h2 {
+    font-family: 'Merriweather', serif; /* Subtítulo com fonte Merriweather */
+    font-size: 1.5em;
+    color: hsl(0, 0%, 0%);
+}
+
+.headline h2 a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.headline h2 a:hover {
+    color: hsl(0, 0%, 0%); /* Cor ao passar o mouse */
+}
+
+.headline img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.headline img:hover {
+    transform: scale(1.05); /* Zoom suave na imagem */
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.news-column {
+    padding: 10px;
+    background-color: #ffc0cb; /* Cor rosa */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.news-column:hover {
+    transform: scale(1.05); /* Expande levemente */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.news-with-image {
+    margin-bottom: 20px;
+}
+
+.news-with-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.news-with-image img:hover {
+    transform: scale(1.05); /* Zoom leve na imagem */
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+h2 a:hover {
+    color: hsl(0, 0%, 1%); /* Cor ao passar o mouse */
+}
+
+p {
+    font-family: 'Merriweather', serif; /* Texto com fonte Merriweather */
+    margin: 0;
+    color: hsl(0, 0%, 0%);
+}
